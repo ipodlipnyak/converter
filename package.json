@@ -1,0 +1,28 @@
+{
+  "name": "converter",
+  "version": "0.0.1",
+  "description": "mp4 to gif converter",
+  "scripts": {
+    "tsc": "tsc",
+    "prebuild": "rimraf dist",
+    "worker:build": "npm run -w worker build",
+    "worker:start": "npm run -w worker start",
+    "webapp:build": "npm run -w webapp build",
+    "webapp:start": "npm run -w webapp serve",
+    "webapp:dev": "npm run -w webapp start",
+    "build": "npm run worker:build & npm run client:build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan Podlipniak",
+  "license": "ISC",
+  "workspaces": [
+    "webapp",
+    "worker"
+  ],
+  "dependencies": {
+    "bullmq": "^5.40.2",
+    "ioredis": "^5.5.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.7.3"
+  }
+}

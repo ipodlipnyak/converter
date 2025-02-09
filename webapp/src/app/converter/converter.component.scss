@@ -1,0 +1,41 @@
+.full-width {
+  width: 100%;
+}
+
+.shipping-card {
+  min-width: 120px;
+  margin: 20px 40px;
+}
+
+.mat-radio-button {
+  display: block;
+  margin: 5px 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.col:last-child {
+  margin-right: 0;
+}
+
+.file-upload-button {
+  width: 100%;
+}
+
+.progressbar {
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+
+.card-content {
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
